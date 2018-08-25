@@ -25,9 +25,11 @@ namespace PrixFinale
         private void InputPrix_TextChanged(object sender, EventArgs e)
         {
             float prixInitiale = float.Parse(InputPrix.Text);
+
             float TPS = prixInitiale * 5f / 100;
             label1.Text = TPS.ToString();
             label1.Visible = true;
+            // calculer les taxes
             float TVQ = TPS + (prixInitiale * 9.975f / 100);
             label2.Text = TVQ.ToString();
             label2.Visible = true;
@@ -51,7 +53,7 @@ namespace PrixFinale
         private void label2_Click(object sender, EventArgs e)
         {
            
-           
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,12 +62,11 @@ namespace PrixFinale
             float TPS = prixInitiale * 5f / 100;
             float TVQ = TPS + (prixInitiale * 9.975f / 100);
             float prix = prixInitiale + TPS + TVQ;
-           
+            //utiliser cet option si le produit quebecoise
             if (ProduitQuebecois.Checked == true)
             {
                 prix = prix - TVQ;
             }
-
             label3.Text = prix.ToString();
             label3.Visible = true;
         }

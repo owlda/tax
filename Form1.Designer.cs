@@ -61,7 +61,7 @@
             // TPS
             // 
             this.TPS.AutoSize = true;
-            this.TPS.Location = new System.Drawing.Point(62, 134);
+            this.TPS.Location = new System.Drawing.Point(46, 81);
             this.TPS.Name = "TPS";
             this.TPS.Size = new System.Drawing.Size(28, 13);
             this.TPS.TabIndex = 2;
@@ -71,7 +71,7 @@
             // TVQ
             // 
             this.TVQ.AutoSize = true;
-            this.TVQ.Location = new System.Drawing.Point(61, 179);
+            this.TVQ.Location = new System.Drawing.Point(46, 117);
             this.TVQ.Name = "TVQ";
             this.TVQ.Size = new System.Drawing.Size(29, 13);
             this.TVQ.TabIndex = 3;
@@ -81,7 +81,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(128, 134);
+            this.label1.Location = new System.Drawing.Point(125, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 4;
@@ -91,7 +91,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(128, 179);
+            this.label2.Location = new System.Drawing.Point(125, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 5;
@@ -102,7 +102,7 @@
             // ProduitQuebecois
             // 
             this.ProduitQuebecois.AutoSize = true;
-            this.ProduitQuebecois.Location = new System.Drawing.Point(64, 226);
+            this.ProduitQuebecois.Location = new System.Drawing.Point(360, 117);
             this.ProduitQuebecois.Name = "ProduitQuebecois";
             this.ProduitQuebecois.Size = new System.Drawing.Size(113, 17);
             this.ProduitQuebecois.TabIndex = 6;
@@ -123,7 +123,7 @@
             // PrixFinale
             // 
             this.PrixFinale.AutoSize = true;
-            this.PrixFinale.Location = new System.Drawing.Point(300, 253);
+            this.PrixFinale.Location = new System.Drawing.Point(284, 200);
             this.PrixFinale.Name = "PrixFinale";
             this.PrixFinale.Size = new System.Drawing.Size(52, 13);
             this.PrixFinale.TabIndex = 8;
@@ -133,7 +133,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(377, 253);
+            this.label3.Location = new System.Drawing.Point(416, 200);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 9;
