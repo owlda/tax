@@ -63,6 +63,7 @@ namespace PrixFinale
             float TVQ = TPS + (prixInitiale * 9.975f / 100);
             float prix = prixInitiale + TPS + TVQ;
             //utiliser cet option si le produit quebecois
+            //fsfe
             if (ProduitQuebecois.Checked == true)
             {
                 prix = prix - TVQ;
