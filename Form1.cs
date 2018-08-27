@@ -63,13 +63,27 @@ namespace PrixFinale
             float TVQ = TPS + (prixInitiale * 9.975f / 100);
             float prix = prixInitiale + TPS + TVQ;
             //utiliser cet option si le produit quebecois
-            //fsfe
+            
             if (ProduitQuebecois.Checked == true)
             {
                 prix = prix - TVQ;
             }
             label3.Text = prix.ToString();
             label3.Visible = true;
+
+            //MessageBox for continue or for exit the calc
+            DialogResult dialog = MessageBox.Show(
+             "Voulez vous continuez ou quittez le calcul. Pour quiter click Yes, pour continuer - No",
+             "Calcul",
+               MessageBoxButtons.YesNo);
+            switch (dialog)
+            {
+                case DialogResult.Yes:Form1.ActiveForm.Close();
+                    break;
+                case DialogResult.No: 
+                    break;
+            }
+
         }
 
         private void ProduitQuebecois_CheckedChanged(object sender, EventArgs e)
