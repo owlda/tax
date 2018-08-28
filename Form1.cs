@@ -24,7 +24,11 @@ namespace PrixFinale
 
         private void InputPrix_TextChanged(object sender, EventArgs e)
         {
-            float prixInitiale = float.Parse(InputPrix.Text);
+            float prixInitiale = 0f;
+           
+            try { prixInitiale = float.Parse(InputPrix.Text); }
+            catch { MessageBox.Show("Pas etre vide", "Calcul de taxes", MessageBoxButtons.OK); prixInitiale = 0f; }
+
             // calculer TPS
             float TPS = prixInitiale * 5f / 100;
             label1.Text = TPS.ToString();
@@ -73,8 +77,9 @@ namespace PrixFinale
 
             //MessageBox for continue or for exit the calc
             DialogResult dialog = MessageBox.Show(
-             "Voulez vous continuez ou quittez le calcul. Pour quiter click Yes, pour continuer - No",
-             "Calcul",
+             "Voulez vous continuez ou quittez le calcul? " +
+             "Pour quitter click Yes, pour continuer - No",
+             "Calcul des taxes",
                MessageBoxButtons.YesNo);
             switch (dialog)
             {
